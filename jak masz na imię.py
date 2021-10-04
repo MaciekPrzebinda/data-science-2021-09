@@ -13,3 +13,5 @@ print("Masz na imię " + name + " i masz " + age + " lat.")
 
 
 
+
+

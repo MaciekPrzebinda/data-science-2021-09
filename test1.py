@@ -7,3 +7,4 @@ print(len(my_name))
 print("ile masz lat?")
 my_age=input()
 print('Za rok będziesz mieć ' + str(int(my_age)+1)+ ' lat.')
+
