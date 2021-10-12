@@ -102,30 +102,153 @@
  #   if i%7==0 and i%5==0:
   #      print (i)
 
+#def a (x):
+#    b=0
+#    for i in x:
+#        b=b+1
+#    return b
+#print(a("Stół"))
 
 
+#def lista(x):
+#    b=0
+#    for i in x:
+#        b=b+i
+#    return b
+#print(lista([1,2,3]))
+
+#def przykład(x):
+#    wynik=x[0]
+#    for i in x[1:]:
+#        wynik=wynik*i
+#    return wynik
+#print(przykład([2,3]))
 
 
+#def a(x):
+#    b=x[0]
+#    for i in x[1:]:
+#        if i > b:
+#            b=i
+#    return b
+#print(a([1,2,3,4]))
 
+#def a(x):
+#    b = x[0]
+#    for i in x:
+#        if i<b:
+#            b=i
+#    return b
+#print(a([2,3,4]))
 
+'''
+def a(tekst):
+    słownik = {}
+    for i in tekst:
+        listakluczy=słownik.keys()
+        if i in listakluczy:
+            słownik[i]+=1
+        else:
+            słownik[i]=1
+    return słownik
 
+tekst="google.com"
+print(a(tekst))
+'''
 
+#def a(x):
+#    b=0
+#    for i in x:
+#        if len(i)>=2 and i[0]==i[-1]:
+#            b=b+1
+#    return b
+#print(a(['abc', 'xyz', 'aba', '1221']))
 
+#Ćwiczenie
+#Napisz funkcję w Pythonie, aby uzyskać listę posortowaną w porządku rosnącym według ostatniego elementu w każdej krotce z podanej listy niepustych krotek.
+#Przykładowa lista: [(2, 5), (1, 2), (4, 4), (2, 3), (2, 1)]
+#Oczekiwany wynik : [(2, 1), (1, 2), (2, 3), (4, 4), (2, 5)]
 
+#lista=[(2, 5), (1, 2), (4, 4), (2, 3), (2, 1)]
+#def drugi(b):
+#    return b[-1]
+#def posortowana(a):
+#    return sorted(a,key=drugi)
+#print(posortowana(lista))
 
+#Ćwiczenie
+#Napisz funkcję w Pythonie, aby uzyskać łańcuch składający się z pierwszych 2 i ostatnich 2 znaków z danego łańcucha.
+# Jeśli długość ciągu jest mniejsza niż 2, zwróć zamiast tego pusty ciąg.
+#Przykładowy ciąg : CodeBrainers
+#Oczekiwany wynik: Cors
 
+#Przykładowy ciąg : CB
+#Oczekiwany wynik: CBCB
+#Przykładowy ciąg : C
+#Oczekiwany wynik: pusty ciąg
 
+#przykładowyciąg = "CodeBrainers"
+#def znaki(x):
+#    if len(x)<2:
+#        return (" ")
+#    else:
+#        return((x[0:2]+x[-2:]))
+#
+#print(znaki(przykładowyciąg))
 
+"""
+Ćwiczenie
+Napisz program, policzy silnię dla liczby n tj.
+n! = 1*2*3*4...*(n-2)*(n-1)*n
+Zrób to przez napisanie funkcji, która rekurencyjne będzie się odwoływała do samej siebie do momentu gdy będzie 
+liczyła silnie dla 1 lub 0, która wynosi 0.
+"""
+"""
+3!=1*2*3
+4!=1*2*3*4
+4!=3!*4
+n!=(n-1)!*n
+"""
+"""
+def silnia(n):
+    if n ==1:
+        return n
+    else:
+        return silnia(n-1)*n
+print(silnia(3))
+"""
+"""
+while True:
+    x=input("Podaj liczbę x ")
+    y=input("podaj liczbę y ")
 
+    try:
+        print(int(x)+int(y))
 
+        break
+    except ValueError:
+        print("Błąd")
+"""
 
+"""
+try:
+    x = input("Podaj liczbę x ")
+    y = input("podaj liczbę y ")
+    wynik=int(x)/int(y)
+except ZeroDivisionError:
+    wynik=("Nie dzielimy przez 0")
 
+print(wynik)
+"""
 
-
-
-
-
-
-
+"""
+try:
+    x = input("Podaj liczbę x ")
+    y = input("podaj liczbę y ")
+    wynik=int(x)/int(y)
+    print(wynik)
+except:
+    pass
+"""
 
 
